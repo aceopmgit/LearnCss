@@ -14,6 +14,13 @@
         border-radius: 4px;
         cursor: pointer;
         margin-right: 8px;
+        transition: opacity 0.15s;
+      }
+      .subscribe-button:hover {
+        opacity: 0.8;
+      }
+      .subscribe-button:active {
+        opacity: 0.5;
       }
       .join-button {
         background-color: white;
@@ -23,6 +30,13 @@
         height: 36px;
         width: 90px;
         border-radius: 2px;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .join-button:hover {
+        background-color: rgb(6, 156, 210);
+      }
+      .join-button:active {
+        opacity: 0.7;
       }
       .tweet-button {
         background-color: rgb(6, 156, 210);
@@ -35,6 +49,15 @@
         font-size: 15px;
         cursor: pointer;
         margin-right: 8px;
+        transition: box-shadow 0.15s;
+      }
+      .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        /*rgba takes gour values first 3 are for color and fourth is for opacity*/
+        /*box shadow takes four value !st value is for horizontal position of shadow 2nd value is for vetical position of shadow
+        third value is for opacity and fourth is for color
+        video resource for this :HTML & CSS Full Course - Beginner to Pro-Hovers,trasition,shadows-Channel Name-SuperSimpleDev
+        */
       }
     </style>
   </head>
