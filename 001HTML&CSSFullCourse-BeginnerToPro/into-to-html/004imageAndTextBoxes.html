@@ -22,11 +22,31 @@
         border-radius: 100px;
         object-position: center;
       }
+
+      .tweet-img {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        border-radius: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      .tweet-msg {
+        font-size: 18px;
+        border: none;
+        width: 200px;
+        vertical-align: middle;
+      }
     </style>
   </head>
   <body>
     <img class="first" src="./car.avif" alt="" />
     <img class="second" src="./car.avif" alt="" />
     <img class="third" src="./car.avif" alt="" />
+    <div class="tweet">
+      <img class="tweet-img" src="./car.avif" alt="" />
+      <p class="tweet-msg">What's happening ?</p>
+      <button class="tweet-btn">Tweet</button>
+    </div>
   </body>
 </html>
