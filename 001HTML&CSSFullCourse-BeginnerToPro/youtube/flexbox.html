@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox practice</title>
+  </head>
+  <body style="padding-bottom: 1000px">
+    <div style="display: flex; flex-direction: row">
+      <div style="background-color: lightblue">div1</div>
+      <div style="background-color: lightpink">
+        div2
+        <p>text</p>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin-top: 30px">
+      <div style="background-color: lightblue; width: 100px">div1</div>
+      <div style="background-color: lightpink; flex: 1">flex1</div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin-top: 30px">
+      <div style="background-color: lightblue; flex: 1">flex1</div>
+      <div style="background-color: lightpink; width: 100px">div1</div>
+      <div style="background-color: lightblue; flex: 2">flex2</div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        height: 70px;
+        border: 1px solid gray;
+        justify-content: center;
+        /*justify-content is used to align the flex item horizontally like start, end,center*/
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink; width: 100px">100px</div>
+      <div style="background-color: lightblue; width: 100px">100px</div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        height: 70px;
+        border: 1px solid gray;
+        justify-content: space-between;
+        /*justify-content is used to align the flex item horizontally like start, end,center,space-between*/
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink; width: 100px">100px</div>
+      <div style="background-color: lightblue; width: 100px">100px</div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        height: 70px;
+        border: 1px solid gray;
+        justify-content: space-between;
+        /*justify-content is used to align the flex item horizontally like start, end,center,space-between*/
+        align-items: center;
+        /* align-items is used to center the items in flex vertically like start,end,center,stretch */
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: lightpink; width: 100px">100px</div>
+      <div style="background-color: lightblue; width: 100px">100px</div>
+    </div>
+  </body>
+</html>

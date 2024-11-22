@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13cNestedFlexBox</title>
+    <style>
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        height: 170px;
+        width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        height: 120px;
+        width: 380px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        padding-left: 10px;
+      }
+      .title {
+        padding-top: 5px;
+        color: #626161;
+        margin-bottom: 12px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+      }
+      .profile-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+      }
+      .text-section {
+        padding-right: 10px;
+      }
+
+      .text-section-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: px;
+      }
+      .text-section-title-text {
+        font-weight: 700;
+        font-size: 20px;
+      }
+      .text-section-title-time {
+        color: #626161;
+        font-size: 10px;
+        padding-top: 11px;
+      }
+      .text-section-subtitle-text {
+        font-size: 15px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="title"><p class="title-content">ALL INBOXES</p></div>
+        <div class="content">
+          <div class="picture-section">
+            <img class="profile-picture" src="./cat1.avif" alt="" />
+          </div>
+          <div class="text-section">
+            <div class="text-section-title">
+              <p class="text-section-title-text">Chewy Promotions</p>
+              <p class="text-section-title-time">4:58 PM</p>
+            </div>
+            <div class="text-section-subtitle">
+              <p class="text-section-subtitle-text">
+                Biggest sales of the year!
+              </p>
+            </div>
+            <div class="text-section-mainContent">
+              <p>Hey there! We're writing to tell you about our...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
