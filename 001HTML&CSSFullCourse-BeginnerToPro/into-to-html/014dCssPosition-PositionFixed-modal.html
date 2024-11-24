@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating modal using position fixed</title>
+    <style>
+      * {
+        font-family: Arial;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal {
+        width: 400px;
+        height: 100px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+      }
+      .modal-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .modal-content {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="modal">
+        <div class="modal-title">Modal Title</div>
+        <div class="modal-content">This is a modal</div>
+        <button class="modal-close">Close</button>
+      </div>
+    </div>
+  </body>
+</html>

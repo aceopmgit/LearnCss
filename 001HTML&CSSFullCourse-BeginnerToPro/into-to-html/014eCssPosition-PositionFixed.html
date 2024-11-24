@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position fixed pratice-Facebook header</title>
+    <style>
+      * {
+        font-family: Arial;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 80px;
+        position: fixed;
+        background-color: white;
+        height: 55px;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(215, 211, 211);
+      }
+      .profile-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 120px;
+      }
+      .profile-pic {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+      }
+      .profile-name {
+        font-weight: 700;
+      }
+
+      .button-section {
+        display: flex;
+        width: 170px;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .add-button {
+        height: 30px;
+        background-color: rgb(53, 83, 213);
+        color: white;
+        font-weight: 550;
+        border-radius: 6px;
+        border: none;
+        width: 85px;
+      }
+      .message-button {
+        height: 30px;
+        background-color: rgb(210 207 207);
+        color: black;
+        font-weight: 700;
+        border-radius: 6px;
+        border: none;
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="profile-section">
+        <img class="profile-pic" src="./cat1.avif" alt="profile-pic" />
+        <p class="profile-name">Oliver Cat</p>
+      </div>
+      <div class="button-section">
+        <button class="add-button">Add Friend</button>
+        <button class="message-button">Message</button>
+      </div>
+    </div>
+  </body>
+</html>
