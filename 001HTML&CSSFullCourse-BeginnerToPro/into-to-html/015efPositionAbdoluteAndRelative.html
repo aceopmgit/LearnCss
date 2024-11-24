@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15ef Position absolute and relative</title>
+    <style>
+      body {
+        height: 3000px;
+      }
+      .container {
+        position: relative;
+        display: inline-block;
+      }
+      .cloth {
+        height: 350px;
+        width: 300px;
+        object-fit: cover;
+      }
+      .discount {
+        background-color: black;
+        color: white;
+        padding: 2px 4px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+      }
+      .add-to-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(249, 244, 244, 0.7);
+        position: absolute;
+        bottom: 0;
+        height: 100px;
+        left: 0;
+        right: 0;
+      }
+      .add-to-cart-btn {
+        padding: 4px 6px;
+        background-color: white;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="cloth" src="./cloth.avif" alt="" />
+      <div class="discount">20% OFF</div>
+      <div class="add-to-cart">
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
