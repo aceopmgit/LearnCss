@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  min-width: 100vw;
+  padding: 20px 40px;
+}
+.title {
+  font-size: 60px;
+  font-weight: 500;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.title span {
+  font-size: 35px;
+  color: #020274;
+}
+.first_row,
+.second_row,
+.fourth_row,
+.fifth_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.third_row {
+  margin-bottom: 30px;
+}
+.first_name,
+.last_name,
+.email,
+.job_role,
+.address,
+.city,
+.pincode,
+.start_date,
+.upload_cv {
+  display: flex;
+  flex-direction: column;
+}
+
+.first_name label,
+.last_name label,
+.email label,
+.job_role label,
+.address label,
+.city label,
+.pincode label,
+.start_date label,
+.upload_cv label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.first_name input,
+.last_name input,
+.email input,
+.job_role select,
+.city input,
+.pincode input,
+.start_date input,
+.upload_cv input {
+  height: 60px;
+  width: 96%;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.start_date input[type="date"],
+.upload_cv input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.address textarea {
+  height: 160px;
+  width: 98%;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 98%;
+}
+.apply_btn {
+  background-color: red;
+  color: white;
+  width: 125px;
+  height: 41px;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 575px) {
+  .container {
+    min-width: 100%;
+    padding: 20px 12px;
+  }
+  .title {
+    font-size: 42px;
+    font-weight: 600;
+    padding-left: 6px;
+  }
+  .title span {
+    font-size: 20px;
+    color: #020274;
+  }
+  .first_row,
+  .second_row,
+  .third_row,
+  .fourth_row,
+  .fifth_row {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .first_name input,
+  .last_name input,
+  .email input,
+  .job_role select,
+  .city input,
+  .pincode input,
+  .start_date input,
+  .upload_cv input {
+    height: 44px;
+    /* width: 370px; */
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .start_date input[type="date"],
+  .upload_cv input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .address textarea {
+    height: 120px;
+    /* width: 370px; */
+    width: 100%;
+  }
+
+  .btn {
+    display: block;
+  }
+  .apply_btn {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    min-width: 100%;
+    padding: 20px 12px;
+  }
+  .title {
+    font-size: 60px;
+    font-weight: 600;
+    padding-left: 6px;
+  }
+  .title span {
+    font-size: 30px;
+    color: #020274;
+  }
+  .first_row,
+  .second_row,
+  .fourth_row,
+  .fifth_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .third_row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .first_name input,
+  .last_name input,
+  .email input,
+  .job_role select,
+  .city input,
+  .pincode input,
+  .start_date input,
+  .upload_cv input {
+    height: 44px;
+    width: 96%;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .start_date input[type="date"],
+  .upload_cv input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .address textarea {
+    height: 120px;
+    width: 98%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    min-width: 100%;
+    padding: 20px 12px;
+  }
+  .title {
+    font-size: 60px;
+    font-weight: 600;
+    padding-left: 6px;
+  }
+  .title span {
+    font-size: 30px;
+    color: #020274;
+  }
+  .first_row,
+  .second_row,
+  .fourth_row,
+  .fifth_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .third_row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .first_name input,
+  .last_name input,
+  .email input,
+  .job_role select,
+  .city input,
+  .pincode input,
+  .start_date input,
+  .upload_cv input {
+    height: 44px;
+    width: 370px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .start_date input[type="date"],
+  .upload_cv input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .address textarea {
+    height: 120px;
+    width: 98%;
+  }
+}
+
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    min-width: 100%;
+    padding: 20px 12px;
+  }
+  .title {
+    font-size: 60px;
+    font-weight: 600;
+    padding-left: 6px;
+  }
+  .title span {
+    font-size: 30px;
+    color: #020274;
+  }
+  .first_row,
+  .second_row,
+  .third_row,
+  .fourth_row,
+  .fifth_row {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .third_row {
+    margin-bottom: 15px;
+  }
+
+  .first_name input,
+  .last_name input,
+  .email input,
+  .job_role select,
+  .city input,
+  .pincode input,
+  .start_date input,
+  .upload_cv input {
+    height: 44px;
+    width: 475px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .start_date input[type="date"],
+  .upload_cv input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .address textarea {
+    height: 120px;
+    width: 977px;
+  }
+} */

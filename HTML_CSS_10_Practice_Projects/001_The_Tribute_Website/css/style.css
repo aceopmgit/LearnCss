@@ -268,3 +268,33 @@ footer {
     text-align: center;
   }
 }
+
+/* Figma design link -https://www.figma.com/design/w9WPhB3gzblxIzRUeYr2Gx/10-HTML-%2B-CSS-PROJECT?node-id=195215-4&node-type=frame&t=RBNYdAXpXgphILVg-0 */
+
+/* various section in media queries
+Extra Small Devices (Mobile Phones)
+@media (max-width: 575px) {
+  } 
+
+  Small Devices (Tablets or Larger Phones)
+  @media (min-width: 576px) and (max-width: 767px) {
+}
+
+Medium Devices (Small Laptops/Tablets)
+@media (min-width: 768px) and (max-width: 991px) {
+  }
+
+  Large Devices (Desktops and Laptops)
+@media (min-width: 992px) and (max-width: 1199px) {
+  }
+
+  Extra Large Devices (Large Desktops)
+  @media (min-width: 1200px) {
+}
+
+
+
+
+
+
+*/
