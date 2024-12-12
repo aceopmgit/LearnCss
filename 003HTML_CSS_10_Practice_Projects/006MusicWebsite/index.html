@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myTunes Website</title>
     <link rel="stylesheet" href="style.css" />
@@ -14,16 +15,28 @@
     <header>
       <nav class="container">
         <div class="logo">myTunes</div>
+
         <ul>
-          <a href="#hero"><li>Overview</li></a>
-          <a href="#music"><li>Music</li></a>
-          <a href="#video"><li>Video</li></a>
-          <a href="#gift"><li>Gift Cards</li></a>
+          <a href="#hero">
+            <li>Overview</li>
+          </a>
+          <a href="#music">
+            <li>Music</li>
+          </a>
+          <a href="#video">
+            <li>Video</li>
+          </a>
+          <a href="#gift">
+            <li>Gift Cards</li>
+          </a>
         </ul>
+        <div class="menu_bar">
+          <i class="fa fa-bars"></i>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="hero_section" id="hero">
+      <section class="hero-section" id="hero">
         <div class="container">
           <h1>my Tunes</h1>
           <h3>Your music, movies, and TV shows take center stage.</h3>
@@ -34,13 +47,12 @@
           </p>
         </div>
       </section>
-
-      <section class="music_section" id="music">
+      <section class="music-section" id="music">
         <div class="container">
           <h2>
-            <span><i class="fa fa-music"></i></span> Music
+            <span><i class="fa fa-music"></i></span>
+            Music
           </h2>
-          <h3>45 million songs. Zero ads.</h3>
           <h4>
             Stream over 45 million songs, ad-free. Or download albums and tracks
             to listen to offline. All the music in your personal myTunes library
@@ -48,17 +60,18 @@
             Music catalog. Start your free three-month trial with no commitment,
             and cancel anytime.
           </h4>
-          <button class="primary_btn">Start Your Trial Now</button>
+          <button class="primary-btn">Start Your Trail Now</button>
+
           <p>
             Orange Music is available in myTunes, and for iOS and Android
             devices.
           </p>
-          <div class="ipad_iphone_img">
-            <img src="./images/ipad-iphone.png" alt="ipad iphone" />
+          <div class="ipad-iphone-img">
+            <img src="images/ipad-iphone.png" alt="iphone ipad" />
           </div>
         </div>
       </section>
-      <section class="about_section container">
+      <section class="about-music container">
         <h3>The movie and TV collection you always wished for. Granted.</h3>
         <p>
           With over 100,000 movies and TV shows to choose from, there’s always
@@ -69,12 +82,12 @@
           Just tap to play, or even download if you’re going somewhere you won’t
           have Wi-Fi.
         </p>
-        <button class="secondary_btn">Read More</button>
-        <div class="mac_img">
-          <img src="./images/mac.png" alt="mac image" />
+        <button class="secondary-btn">Read more</button>
+        <div class="mac-img">
+          <img src="images/mac.png" alt="macbook" />
         </div>
       </section>
-      <section class="video_section" id="video">
+      <section class="video-section" id="video">
         <div class="container">
           <h3>A world of entertainment. Available wherever you are.</h3>
           <p>
@@ -88,30 +101,31 @@
         </div>
       </section>
       <div class="container">
-        <section class="gift_section" id="gift">
-          <div class="gift_card">
-            <img src="./images/gift_card.png" alt="gift card" />
+        <section class="gift-section" id="gift">
+          <div class="gift-card">
+            <img src="images/gift_card.png" alt="gift card" />
           </div>
-          <div class="gift_content">
+          <div class="gift-content">
             <h3>Gift Card</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatum distinctio numquam, nostrum quis labore quas nobis amet
-              doloremque, cupiditate, excepturi ducimus tempora obcaecati ipsa
-              accusamus! Maxime earum amet placeat numquam architecto nobis
-              minima tenetur assumenda, ducimus excepturi ut cupiditate sunt
-              quaerat porro modi expedita! Facere magni excepturi assumenda
-              veniam error!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+              cum explicabo, excepturi eaque commodi minima quas repellendus
+              assumenda facere hic, earum quasi iste asperiores molestiae
+              obcaecati laborum, voluptatum alias velit cupiditate! Quae soluta
+              sapiente quasi, iusto quam magnam doloribus natus quod eius, rerum
+              asperiores aspernatur. Illum neque sequi odit fuga.
             </p>
             <p>Already have an Orange MyTunes Music Gift Card?</p>
             <hr />
-            <button class="secondary_btn">Redeem</button>
+            <div>
+              <button class="secondary-btn">Redeem</button>
+            </div>
           </div>
         </section>
       </div>
     </main>
     <footer>
-      <section class="footer_upper">
+      <section class="footer-upper">
         <div class="container">
           <div class="footer-links">
             <h4>Shop & Learn</h4>
@@ -155,8 +169,8 @@
           </div>
         </div>
       </section>
-      <section class="footer_lower">
-        <p>Copyright © 2024 Ace Coding</p>
+      <section class="footer-lower">
+        <p>Copyright © 2022 Do Some Coding</p>
       </section>
     </footer>
   </body>
